@@ -1,6 +1,9 @@
 import React from "react";
 import "./Main.css";
 import Printform from "./printform/Printform";
+import Upload from "./images/icons8-upload-100.png";
+import Quote from "./images/icons8-receipt-approved-100.png";
+import Shipped from "./images/icons8-shipped-100.png";
 
 export default function Main() {
   return (
@@ -23,6 +26,11 @@ export default function Main() {
               <p style={{ color: "#29ABE2", fontWeight: "bold" }}>
                 Power by Ursvik Aerodynamics
               </p>
+            </div>
+            <div>
+              <img src={Upload} alt="Upload" />
+              <img src={Quote} alt="Quote" />
+              <img src={Shipped} alt="Shipped" />
             </div>
           </div>
           <div style={{ width: "50%", height: "500px", display: "flex", justifyContent: "right" }}>
