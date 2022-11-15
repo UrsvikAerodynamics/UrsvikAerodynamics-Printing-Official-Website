@@ -1,4 +1,28 @@
-h1{
+h1 {
     color: #808080;
-    font-weight:"bold";
+    font-weight: bold;
+}
+
+p{
+    color: #808080;
+    font-weight: bold;
+}
+
+.icon {
+    margin-top: 30px;
+    height: 60px;
+    align-items: center;
+}
+
+.marginLeftRight{
+    margin-left: 40px;
+    margin-right: 40px;
+
+}
+img {
+    height: 100%;
+    width: max-content;
+}
+.printArt1{
+    margin: 30px;
 }
