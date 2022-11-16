@@ -4,14 +4,18 @@ import Printform from "./printform/Printform";
 import Upload from "./images/icons8-upload-100.png";
 import Quote from "./images/icons8-receipt-approved-100.png";
 import Shipped from "./images/icons8-shipped-100.png";
+import MainImg from "./images/bigprint.jpg";
 
 
 
 export default function Main() {
   return (
     <div>
-      <div style={{ height: "465px", backgroundColor: "greenyellow" }}>
-        Image
+      <div style={{ height: "465px", display:"flex",alignItems:"center", overflow:"hidden"}}>
+        <img src={MainImg} alt="mainImg" style={{
+          width: "100%",
+          height:"max-content",
+        }} />
       </div>
       <main style={{ display: "flex", justifyContent: "center" }}>
         <div
