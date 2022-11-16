@@ -30,7 +30,7 @@ export default function Button(props: ButtonProps) {
 }
 
 function Icon() {
-  if (iconLink !== null) {
+  if (iconLink !== undefined) {
     return (
       <div style={{"height":"70%"}}>
         <img src={iconLink} />
