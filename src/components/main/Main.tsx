@@ -29,9 +29,7 @@ export default function Main() {
           <div style={{ width: "50%", height: "500px", background: "white" }}>
             <div style={{ width: "70%", marginTop: "30px", marginLeft: "30px" }}>
               <h1>UAERO PRINTING -Modern 3D printing solutions</h1>
-              <p style={{ color: "#29ABE2", fontWeight: "bold" }}>
-                Power by Ursvik Aerodynamics
-              </p>
+              <a className="Grow" style={{ textDecoration:"none", color: "#29ABE2", fontWeight: "bold" }} href="http://localhost:3000/">Power by Ursvik Aerodynamics</a>
             </div>
             <div style={{ display: "flex" , flexDirection: "column", marginLeft: "30px" }}>
               <div className="icon" style={{ display: "flex", flexDirection: "row" }}>

@@ -1,0 +1,6 @@
+.Grow{
+    transition: transform .2s;
+}
+.Grow:hover{
+    transform: scale(1.05); 
+}
