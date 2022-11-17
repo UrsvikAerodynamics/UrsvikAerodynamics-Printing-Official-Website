@@ -1,24 +1,21 @@
 import React from 'react';
 import './Header.css';
 import Logo from './images/Logo.png';
-import UserIcon from './images/icons8-user-96.png';
-import Button from '../extra/Button';
+import {LoginBtn} from './LoginBtn'
 
 
 
 export default function Header() {
   return (
     <header>
-      <div className='SideLeft'>
+      <nav className='SideLeft'>
         <img className='Logo' src={Logo} alt='logo'></img>
-      </div>
-      <div className='SideRight'>
-        <Button content='Login' color='#D9D9D9' iconLink={UserIcon} onClick={
-          () => console.log("You clicked on login buttons")
-        }
-        />
-      </div>
-
+      </nav>
+      <nav className='SideRight'>
+        <LoginBtn/>
+      </nav>
     </header>
   )
 }
+
+
