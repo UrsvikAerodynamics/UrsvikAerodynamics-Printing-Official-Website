@@ -28,7 +28,7 @@ export const LoginBtn = () => {
 
         return (
             <div className='dropdown'>
-                <Button content='Login' color='#D9D9D9' iconLink={UserIcon} onClick={
+                <Button content={username as string} color='#D9D9D9' iconLink={UserIcon} onClick={
                     () => console.log("You clicked on login buttons")
                 }
                 />
@@ -49,8 +49,7 @@ export const LoginBtn = () => {
                         >Logout</button>
                     </div>
                     <div className='BoldText'>
-                        {username}
-                        {email}
+                        <p>{email}</p>
                     </div>
                 </div>
             </div>
