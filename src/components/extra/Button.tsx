@@ -4,39 +4,44 @@ interface ButtonProps {
   content: string;
   color: string;
   iconLink?: string;
+  onClick: () => void;
 }
 
-let iconLink : string;
+let iconLink: string;
 export default function Button(props: ButtonProps) {
   iconLink = props.iconLink!;
   return (
-    <div style={{
-      height: '55px',
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-      width: "max-content",
-      backgroundColor: props.color,
-      paddingLeft:"15px",
-      paddingRight:"15px",
-      borderRadius:"15px",
-      margin:"30px"
-    }}
-    className='Grow'>
-      <Icon/>
-      <p style={{margin:"10px", color:"black"}}>{props.content}</p>
-    </div>
+    <button
+      onClick={props.onClick}
+
+      style={{
+        border:'none',
+        height: '55px',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        width: "max-content",
+        backgroundColor: props.color,
+        paddingLeft: "15px",
+        paddingRight: "15px",
+        borderRadius: "15px",
+        margin: "30px"
+      }}
+      className='Grow'>
+      <Icon />
+      <p style={{ margin: "10px", color: "black" }}>{props.content}</p>
+    </button>
   )
 }
 
 function Icon() {
   if (iconLink !== undefined) {
     return (
-      <div style={{"height":"70%"}}>
+      <div style={{ "height": "70%" }}>
         <img src={iconLink} />
       </div>
     )
-  }else{
+  } else {
     return (<div></div>);
   }
 

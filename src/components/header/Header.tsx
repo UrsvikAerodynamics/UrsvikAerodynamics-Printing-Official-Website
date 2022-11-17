@@ -13,9 +13,12 @@ export default function Header() {
         <img className='Logo' src={Logo} alt='logo'></img>
       </div>
       <div className='SideRight'>
-        <Button content='Login' color='#D9D9D9' iconLink={UserIcon}/>
+        <Button content='Login' color='#D9D9D9' iconLink={UserIcon} onClick={
+          () => console.log("You clicked on login buttons")
+        }
+        />
       </div>
-      
+
     </header>
   )
 }
