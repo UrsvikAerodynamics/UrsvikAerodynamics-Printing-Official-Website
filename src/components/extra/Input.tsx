@@ -1,9 +1,10 @@
 import React from "react";
+import "./Input.css"
 
 interface IProps{
     type:string;
     placeholder:string;
-    borderColor: string;
+    color: string;
     name: string;
     required : boolean;
     onChange: () => void;
@@ -11,7 +12,7 @@ interface IProps{
 
 export default function TextInput(props:IProps) {
   return (
-    <input type={props.type} placeholder={props.placeholder} name={props.name} required={props.required} onChange={props.onChange} >
+    <input type={props.type} placeholder={props.placeholder} name={props.name} required={props.required} onChange={props.onChange} style={{backgroundColor:props.color}}>
 
     </input>
   );

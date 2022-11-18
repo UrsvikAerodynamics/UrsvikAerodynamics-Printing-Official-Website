@@ -25,7 +25,6 @@ export default function Button(props: ButtonProps) {
         paddingLeft: "15px",
         paddingRight: "15px",
         borderRadius: "15px",
-        margin: "30px"
       }}
       className='Grow'>
       <Icon />
