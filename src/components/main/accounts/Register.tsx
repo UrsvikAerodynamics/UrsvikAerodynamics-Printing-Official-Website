@@ -73,6 +73,14 @@ export default function Register() {
 
           />
 
+          <div style={{marginTop: "20px", width: "100%", display: "flex", flexDirection: "row", justifyContent:"left" }}>
+            <input style={{width:"30px"}} type="checkbox" />
+
+            <label style={{display: "flex", flexDirection: "row", alignItems:"center"}}>
+              <b >I agree to the Therms and Conditions</b>
+            </label>
+          </div>
+
           <div
             style={{
               display: "flex",
