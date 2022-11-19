@@ -1,8 +1,12 @@
 import React from "react";
 import Input from "../../extra/Input";
 import Button from "../../extra/Button";
+import './accounts.css';
+import { useNavigate } from "react-router-dom";
 
 export default function Login() {
+  const navigate = useNavigate();
+
   return (
     <div
       style={{
@@ -17,7 +21,11 @@ export default function Login() {
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
-          width: "50%",
+          alignItems: "center",
+          width: "max-content",
+          backgroundColor: "#808080",
+          padding: "30px",
+          borderRadius: "20px",
         }}
       >
         <label>
@@ -29,7 +37,9 @@ export default function Login() {
           name="uname"
           required={true}
           color="#D9D9D9"
-          onChange={() => {}}
+          onChange={() => { }}
+          width="450px"
+
         />
 
         <label>
@@ -42,8 +52,11 @@ export default function Login() {
           name="psw"
           required={true}
           color="#D9D9D9"
-          onChange={() => {}}
+          onChange={() => { }}
+          width="450px"
+
         />
+
         <div
           style={{
             display: "flex",
@@ -51,19 +64,27 @@ export default function Login() {
             marginTop: "20px",
             justifyContent: "space-between",
             alignItems: "center",
+            width: "450px"
           }}
         >
-          <Button content="Login" color="#29ABE2" onClick={() => {}} />
+          <Button content="Login" color="#29ABE2" onClick={() => { }} />
           <div style={{ display: "flex", justifyContent: "center" }}>
             <div style={{ marginRight: "30px" }}>
               <Button
                 content="Forgot password"
                 color="#29ABE2"
-                onClick={() => {}}
+                onClick={() => { }}
               />
             </div>
-            <Button content="Cancel" color="red" onClick={() => {}} />
+            <Button content="Cancel" color="red" onClick={() => { navigate("/") }} />
           </div>
+        </div>
+        <div style={{
+          display: "flex",
+          justifyContent: "center",
+          width: "100%",
+        }}>
+          <p className="Pointer" onClick={()=>{navigate("/register")}} style={{color:"black", textDecoration: "underline"}}>Don`t have a account? Register here</p>
         </div>
       </div>
     </div>

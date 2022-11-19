@@ -26,7 +26,7 @@ export default function Button(props: ButtonProps) {
         paddingRight: "15px",
         borderRadius: "15px",
       }}
-      className='Grow'>
+      className='Grow Pointer'>
       <Icon />
       <p style={{ margin: "10px", color: "black" }}>{props.content}</p>
     </button>
