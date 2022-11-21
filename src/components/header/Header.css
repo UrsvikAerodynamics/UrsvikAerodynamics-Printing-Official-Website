@@ -33,18 +33,18 @@ header {
 
 .dropdown-content {
     padding: 15px;
-    margin-top: -20px;
     display: none;
     position: absolute;
     background-color: #D9D9D9;
     min-width: 160px;
     z-index: 1;
-    right:30px;
     border-radius: 20px;
+    right:0px;
+
 
 }
 
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:active  .dropdown-content {display: block;}
 
 .BoldText {
     font-weight: bold;
