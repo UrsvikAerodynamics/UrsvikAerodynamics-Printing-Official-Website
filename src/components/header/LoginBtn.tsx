@@ -6,8 +6,10 @@ import { Link, useNavigate } from "react-router-dom";
 
 export const LoginBtn = () => {
   const [username, setUsername] = useState<string>();
-  const [email, setemail] = useState<string>();
+  const [email, setEmail] = useState<string>();
+  const [dropdown, setDropdown] = useState<string>('dropdown');
   const [loggedIn, setloggedIn] = useState<boolean>(false);
+
   const navigate = useNavigate();
 
   const logout = () => {
@@ -20,18 +22,25 @@ export const LoginBtn = () => {
     if (!localStorage.getItem("access_token")) {
       setloggedIn(true);
       setUsername("Exempel Exempelson");
-      setemail("Exempel.Exempelson@gmail.com");
+      setEmail("Exempel.Exempelson@gmail.com");
     }
   }, []);
 
   if (loggedIn) {
     return (
-      <div className="dropdown">
+      <div className={dropdown}>
         <Button
           content={username as string}
           color="#D9D9D9"
           iconLink={UserIcon}
-          onClick={() => {}}
+          onClick={() => {
+            if (dropdown === 'dropdown') {
+              setDropdown('dropdownOnClick');
+            }
+            else {
+              setDropdown('dropdown');
+            }
+          }}
         />
         <div className="dropdown-content">
           <div

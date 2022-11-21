@@ -39,12 +39,14 @@ header {
     min-width: 160px;
     z-index: 1;
     border-radius: 20px;
-    right:0px;
+    right:0;
+    top: 12%;
+
 
 
 }
 
-.dropdown:active  .dropdown-content {display: block;}
+.dropdownOnClick  .dropdown-content {display: block;}
 
 .BoldText {
     font-weight: bold;
