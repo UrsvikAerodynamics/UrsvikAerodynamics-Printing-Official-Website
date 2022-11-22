@@ -40,10 +40,7 @@ header {
     z-index: 1;
     border-radius: 20px;
     right:0;
-    top: 12%;
-
-
-
+    top: 135px;
 }
 
 .dropdownOnClick  .dropdown-content {display: block;}

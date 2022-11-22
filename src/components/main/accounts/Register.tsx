@@ -73,13 +73,6 @@ export default function Register() {
 
           />
 
-          <div style={{marginTop: "20px", width: "100%", display: "flex", flexDirection: "row", justifyContent:"left" }}>
-            <input style={{width:"30px"}} type="checkbox" />
-
-            <label style={{display: "flex", flexDirection: "row", alignItems:"center"}}>
-              <b >I agree to the Therms and Conditions</b>
-            </label>
-          </div>
 
           <div
             style={{
@@ -124,7 +117,118 @@ export default function Register() {
             padding: "30px",
             borderRadius: "20px",
           }}
-        ></div>
+        >
+          <label>
+            <b>AddressLine1</b>
+          </label>
+          <Input
+            type="text"
+            placeholder="Enter AddressLine1"
+            name="addressLine1"
+            required={true}
+            color="#D9D9D9"
+            onChange={() => { }}
+            width="450px"
+
+          />
+
+          <label>
+            <b>AddressLine2</b>
+          </label>
+          <Input
+            type="text"
+            placeholder="Enter AddressLine2"
+            name="addressLine2"
+            required={true}
+            color="#D9D9D9"
+            onChange={() => { }}
+            width="450px"
+          />
+
+          <label>
+            <b>City</b>
+          </label>
+
+          <Input
+            type="text"
+            placeholder="Enter City"
+            name="city"
+            required={true}
+            color="#D9D9D9"
+            onChange={() => { }}
+            width="450px"
+
+          />
+          <label>
+            <b>PostalCode</b>
+          </label>
+
+          <Input
+            type="text"
+            placeholder="Enter PostalCode"
+            name="postalCode"
+            required={true}
+            color="#D9D9D9"
+            onChange={() => { }}
+            width="450px"
+
+          />
+          <label>
+            <b>Country</b>
+          </label>
+
+          <Input
+            type="text"
+            placeholder="Enter Country"
+            name="country"
+            required={true}
+            color="#D9D9D9"
+            onChange={() => { }}
+            width="450px"
+
+          />
+          <label>
+            <b>Number</b>
+          </label>
+
+          <Input
+            type="number"
+            placeholder="Enter Number"
+            name="text"
+            required={true}
+            color="#D9D9D9"
+            onChange={() => { }}
+            width="450px"
+
+          />
+
+          <div style={{marginTop: "20px", width: "100%", display: "flex", flexDirection: "row", justifyContent:"left" }}>
+            <input style={{width:"30px"}} type="checkbox" />
+
+            <label style={{display: "flex", flexDirection: "row", alignItems:"center"}}>
+              <b >I agree to the Therms and Conditions</b>
+            </label>
+          </div>
+
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              marginTop: "20px",
+              justifyContent: "space-between",
+              alignItems: "center",
+              width: "450px"
+            }}
+          >
+            <Button content="Back" color="red" onClick={() => {
+              setPage(1);
+            }} />
+
+            <Button content="Register" color="#29ABE2" onClick={() => {
+              setPage(2);
+            }} />
+          </div>
+        </div>
       </div>
     );
 
