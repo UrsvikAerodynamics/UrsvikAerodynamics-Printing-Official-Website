@@ -65,11 +65,13 @@ export default function Register() {
         <div
           style={{
             display: "flex",
-            flexDirection: "row",
+            flexDirection: "column",
+            backgroundColor: "#808080",
             marginTop: "20px",
             justifyContent: "space-between",
             alignItems: "center",
-            width: "450px",
+            borderRadius:"20px",
+            padding: "20px"
           }}
         >
           <AddressForm />
