@@ -1,7 +1,6 @@
 import React from "react";
 import "./Header.css";
 import Logo from "./images/Logo.png";
-import { LoginBtn } from "./LoginBtn";
 
 export default function Header() {
   return (
@@ -11,7 +10,6 @@ export default function Header() {
       </nav>
       <nav className="SideRight">
         <div style={{ margin: "30px" }}>
-          <LoginBtn />
         </div>
       </nav>
     </header>

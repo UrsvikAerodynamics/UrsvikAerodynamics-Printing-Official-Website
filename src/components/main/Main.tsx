@@ -52,7 +52,7 @@ export default function Main() {
             </div>
           </div>
           <div style={{ width: "50%", height: "500px", display: "flex", justifyContent: "right" }}>
-            <div style={{ borderRadius: "20px", width: "70%", background: "#808080", marginTop: "30px", marginRight: "30px" }}>
+            <div style={{ borderRadius: "20px", width: "70%", background: "#D1D1D1", marginTop: "30px", marginRight: "30px", display:"flex", justifyContent:"center", alignItems:"center", padding:"15px" }}>
               <Printform />
             </div>
           </div>
