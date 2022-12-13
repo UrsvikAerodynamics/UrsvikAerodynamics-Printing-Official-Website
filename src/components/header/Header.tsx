@@ -1,7 +1,7 @@
 import React from "react";
 import "./Header.css";
 import Logo from "./images/Logo.png";
-import { LoginBtn } from "./LoginBtn";
+import LoginBtn from "./LoginBtn";
 
 export default function Header() {
   return (
