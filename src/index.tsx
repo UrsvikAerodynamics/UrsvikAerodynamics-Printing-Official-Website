@@ -4,6 +4,8 @@ import "./index.css";
 import App from "./App";
 import { BrowserRouter as Router } from "react-router-dom";
 import { Routes ,Route } from "react-router-dom";
+import Login from "./components/main/accounts/Login";
+import Register from "./components/main/accounts/Register";
 
 
 const root = ReactDOM.createRoot(
@@ -14,6 +16,9 @@ root.render(
     <React.StrictMode>
       <Routes>
         <Route path="/" element={<App/>} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Login />} />
+
       </Routes>
     </React.StrictMode>
   </Router>
