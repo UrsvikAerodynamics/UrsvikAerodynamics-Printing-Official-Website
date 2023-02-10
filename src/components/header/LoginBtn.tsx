@@ -22,7 +22,7 @@ export default function LoginBtn() {
 
     useEffect(() => {
         //Todo fetch current user
-        if (!localStorage.getItem("access_token")) {
+        if (localStorage.getItem("access_token")) {
             setloggedIn(true);
             setUsername("Exempel Exempelson");
             setemail("Exempel.Exempelson@gmail.com");
